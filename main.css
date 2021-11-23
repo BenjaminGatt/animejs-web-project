@@ -1,0 +1,192 @@
+body {
+            background-color: black;
+            margin: 0;
+            font-family: Calibri;
+        }
+        button {
+            margin-right:20px;
+            margin-left:10px;
+            font-size: 18px;
+            padding: 10px 10px 10px 10px;
+            color:#5be492;
+            background-color:#1D1F22;
+        }
+
+        button:hover {
+            background-color: #2e3136;
+            color:white;
+        }
+
+        .st0 {
+            fill: #686868;
+            transform-origin: center;
+        }
+
+        .st3 {
+            stroke: #5be492
+        }
+
+        .redline {
+            fill: none;
+            position: relative;
+            z-index: -3;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            
+        }
+
+        .ring {
+            width: 750px;
+            height: 750px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -42.5%);
+            stroke: #5be492;
+            stroke-width: 2px;
+            z-index: -1;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .greycircle {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            z-index: -2;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .vrlogo {
+            width: 300px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -10%);
+            z-index: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .vr {
+            stroke-width: 0.5px;
+            stroke-dashoffset: -200;
+            stroke-dasharray: 200;
+            animation-name: vranimation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            transform: scale(0.2, 0.2);
+            z-index: 0;
+            
+        }
+
+        .vr:hover {
+            stroke-width: 1px;
+        }
+
+        @keyframes vranimation {
+
+            0% {
+                transform: scale(0, 0);
+                opacity: 0.1;
+            }
+
+            50% {
+                transform: scale(1, 1);
+                opacity: 1;
+                stroke-dashoffset: -177;
+                stroke: #5be492;
+            }
+
+            100% {
+                transform: scale(1, 1);
+                stroke-dashoffset: 0;
+                stroke: #5be492;
+            }
+        }
+
+        .headset {
+            stroke-width: 5px;
+            stroke-dasharray: 2000;
+            stroke-miterlimit: 10;
+            animation-name: headsetanimation;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        }
+        
+        @keyframes headsetanimation {
+            0% {
+                opacity: 0%;
+            }
+            30% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #1D1F22;
+            z-index: 1;
+        }
+
+        .topnav a {
+            float: left;
+            color: #7E7F85;
+            text-align: center;
+            padding: 35px 30px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .topnav a:hover {
+            background-color: #2e3136;
+            color: white;
+        }
+
+        .topnav a.active {
+            color: #5be492;
+            font-weight: bold;
+        }
+
+        .topnav a.topleftlogo {
+            float: left;
+            transform: scale(1.5, 1.5) translateX(20px);
+            margin-right: 80px;
+            margin-left: 20px;
+            padding: 0px 0px;
+        }
+
+        .topnav a.topleftlogo:hover {
+            background-color: #1D1F22;
+        }
+
+        .topnav a.icons {
+            float: right;
+            padding: 25px 25px;
+        }
+
+        .icon1 {
+            transform-origin: center;
+            fill: red;
+        }
+
+        .bracketsicon {
+            fill: none;
+            stroke: white;
+            stroke-width: 4;
+            stroke-miterlimit: 10
+        }

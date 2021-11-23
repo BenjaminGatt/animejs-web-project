@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="anime-master/lib/anime.min.js"></script>
+    <script src="benimation.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="topleftlogo" href="#home"><img src="VR_Logo_v7_clean.svg" width="100" height="100"></a>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="icons" href="http://benjamingatt.codes/" target="_blank" onmouseover="iconTransform()"
+            onmouseout="iconReturn()">
+            <svg width="50" height="50">
+                <path class="icon1"
+                    d="M12.1 37.6l.3-2.7-6.1.8L5.2 45h14.6l1.4-7.4zM36.9 31.9v.2l-.2 2c-.3 2.3-1 3.5-2.6 3.5H23.2L21.8 45h13.6c4.4 0 6.4-3.1 7-8.7l.4-3.6c.1-.6.1-1.1.1-1.7l-6 .9zM13.1 27.9h9.8l1.2-6.7H13.9l.9-7.9L9 12.1 6.3 34.7l6.1-.8zM35.2 21.2h-9.1l-1.3 6.6h9.9c1.3 0 2.3.2 2.3 2.2 0 .2 0 .5-.1.8l6-.8v-.4c0-4.1-1.9-5-3.3-5.3 1.3-.2 3.2-1 4.2-5.2L38.1 18c-.3 2.5-1.4 3.2-2.9 3.2zM36.5 12.1c1.3 0 2 .2 2 1.9 0 .4 0 .9-.1 1.5l-.3 1.5 5.7 1.3c.2-.7.3-1.5.4-2.5l.3-2.4c.1-.9.2-1.8.2-2.6 0-3.9-1.5-6.1-5.1-6.1H29.1l-1.4 7.4h8.8zM14.9 12.1h10.8l1.4-7.4H9.7L9 11.1l5.8 1.2z" />
+            </svg>
+        </a>
+        <a class="icons" href="https://www.mcast.edu.mt" target="_blank" onmouseover="mcastTransform()"
+            onmouseout="mcastReturn()"><svg class="icon2" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                <path class="mlayer" d="M27.5 29.7V7a54.7 54.7 0 01-10.3 10C10.7 21.8 4.7 23.7.5 24.5v5.2h27z"
+                    fill="#3f7cb8" />
+                <path class="mlayer" d="M38.4 35.2V5.6c-3.7 4.3-8.4 9-14.1 13.1-9.3 6.6-17.7 9-23.9 9.9v6.8h38"
+                    fill="#c72a4c" />
+                <path class="mlayer" d="M49.4 39.9V5C45 10.6 39 17 31.5 22.2 19 30.8 7.7 32.2.5 32.1V32v8-.1h48.9"
+                    fill="#fabc14" />
+            </svg></a>
+        <a class="icons" href="https://github.com/BenjaminGatt" target="_blank" onmouseover="bracketTransform()"
+            onmouseout="bracketReturn()"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                <path class="bracketsicon"
+                    d="M1.3 25.5L17.7 9M1.3 24.5L17.7 41M29 11l-7 28M49 24.3L32.5 40.8M49 25.3L32.5 8.8" />
+            </svg></a>
+    </div>
+
+    <div style="padding-left:16px; color: #7E7F85;">
+        <h2>Design and Development Assignment</h2>
+        <p>Phase 1 AA1.4</p>
+        <p>
+            <button id="animstart" onclick="btnStart()">Start Animations</button>
+        </p>
+        <p>
+            <button id="animstop" onclick="btnStop()">Stop Animations</button>
+        </p>
+    </div>
+
+    <div class="redline">
+
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 885"
+            style="stroke:red" xml:space="preserve">
+            <!--6th from top-->
+            <path id="Line_15" class="st1" d="M774 113.88h374" />
+            <path id="Line_1" class="st1" d="M.25 884.38l961-883.5" />
+            <path id="Line_2" class="st1" d="M1920.25 884.38L961.25.88" />
+            <path id="Line_4" class="st1" d="M499.15 885.12L961.25.88" />
+            <path id="Line_5" class="st1" d="M1441.25 884.38L961.25.88" />
+            <path id="Line_6" class="st1" d="M.25 581.59L961.25.88" />
+            <path id="Line_7" class="st1" d="M1920.25 581.59L961.25.88" />
+            <path id="Line_3" class="st1" d="M960.25 884.38l1-883.5" />
+            <!--9th-->
+            <path id="Line_10" class="st1" d="M394 343.88h1134" />
+            <!--8th-->
+            <path id="Line_12" class="st1" d="M576 233.88h770" />
+            <!--4th-->
+            <path id="Line_16" class="st1" d="M872 54.88h178.75" />
+            <!--10th-->
+            <path id="Line_13" class="st1" d="M121 508.88h1679" />
+            <!--7th-->
+            <path id="Line_14" class="st1" d="M692 163.88h538" />
+            <!--5th-->
+            <path id="Line_11" class="st1" d="M824 83.88h274" />
+            <!--3rd-->
+            <path id="Line_16_1_" class="st1" d="M898 39.3h127" />
+            <!--2nd-->
+            <path id="Line_16_2_" class="st1" d="M912 30.5h98" />
+            <!--1st-->
+            <path id="Line_16_3_" class="st1" d="M924 23.5h75" />
+        </svg>
+    </div>
+    <div class="ring">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 752 752">
+            <polygon id="hexagon1" points="220,1 530,1 750,220 750,530 530,750 220,750 1,530 1,220" fill="none" />
+            <polygon id="hexagon2" points="375,0 640,110 750,375 640,640 375,750 110,640 0,375 110,110" fill="none" />
+            <polygon id="hexagon3" points="375,0 640,110 750,375 640,640 375,750 110,640 0,375 110,110" fill="none" />
+            <polygon id="hexagon4" points="220,1 530,1 750,220 750,530 530,750 220,750 1,530 1,220" fill="none" />
+        </svg>
+    </div>
+
+    <div class="greycircle">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 500 500"
+            xml:space="preserve">
+            <path class="st0" d="M325.5 100.5h24v24h-24z" />
+            <path class="st0" d="M349 101v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 100.5h24v24h-24z" />
+            <path class="st0" d="M374 101v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 150.5h24v24h-24z" />
+            <path class="st0" d="M374 151v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 125.5h24v24h-24z" />
+            <path class="st0" d="M374 126v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 75.5h24v24h-24z" />
+            <path class="st0" d="M299 76v23h-23V76h23m1-1h-25v25h25V75zM100.5 100.5h24v24h-24z" />
+            <path class="st0" d="M124 101v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 125.5h24v24h-24z" />
+            <path class="st0" d="M124 126v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 100.5h24v24h-24z" />
+            <path class="st0" d="M174 101v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 100.5h24v24h-24z" />
+            <path class="st0" d="M149 101v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 200.5h24v24h-24z" />
+            <path class="st0" d="M124 201v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 175.5h24v24h-24z" />
+            <path class="st0" d="M124 176v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 150.5h24v24h-24z" />
+            <path class="st0" d="M124 151v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 175.5h24v24h-24z" />
+            <path class="st0" d="M374 176v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 100.5h24v24h-24z" />
+            <path class="st0" d="M199 101v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 75.5h24v24h-24z" />
+            <path class="st0" d="M274 76v23h-23V76h23m1-1h-25v25h25V75zM275.5 100.5h24v24h-24z" />
+            <path class="st0" d="M299 101v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 100.5h24v24h-24z" />
+            <path class="st0" d="M324 101v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 75.5h24v24h-24z" />
+            <path class="st0" d="M249 76v23h-23V76h23m1-1h-25v25h25V75zM200.5 100.5h24v24h-24z" />
+            <path class="st0" d="M224 101v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 75.5h24v24h-24z" />
+            <path class="st0" d="M224 76v23h-23V76h23m1-1h-25v25h25V75zM350.5 200.5h24v24h-24z" />
+            <path class="st0" d="M374 201v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 350.5h24v24h-24z" />
+            <path class="st0" d="M249 351v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 350.5h24v24h-24z" />
+            <path class="st0" d="M324 351v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 375.5h24v24h-24z" />
+            <path class="st0" d="M249 376v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 350.5h24v24h-24z" />
+            <path class="st0" d="M299 351v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 350.5h24v24h-24z" />
+            <path class="st0" d="M274 351v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 375.5h24v24h-24z" />
+            <path class="st0" d="M274 376v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 350.5h24v24h-24z" />
+            <path class="st0" d="M174 351v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 350.5h24v24h-24z" />
+            <path class="st0" d="M224 351v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 350.5h24v24h-24z" />
+            <path class="st0" d="M149 351v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 350.5h24v24h-24z" />
+            <path class="st0" d="M199 351v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 250.5h24v24h-24z" />
+            <path class="st0" d="M399 251v23h-23v-23h23m1-1h-25v25h25v-25zM75.5 200.5h24v24h-24z" />
+            <path class="st0" d="M99 201v23H76v-23h23m1-1H75v25h25v-25zM325.5 350.5h24v24h-24z" />
+            <path class="st0" d="M349 351v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 225.5h24v24h-24z" />
+            <path class="st0" d="M374 226v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 250.5h24v24h-24z" />
+            <path class="st0" d="M374 251v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 225.5h24v24h-24z" />
+            <path class="st0" d="M399 226v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 350.5h24v24h-24z" />
+            <path class="st0" d="M374 351v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 325.5h24v24h-24z" />
+            <path class="st0" d="M374 326v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 275.5h24v24h-24z" />
+            <path class="st0" d="M374 276v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 300.5h24v24h-24z" />
+            <path class="st0" d="M374 301v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 400.5h24v24h-24z" />
+            <path class="st0" d="M224 401v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 175.5h24v24h-24z" />
+            <path class="st0" d="M399 176v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 200.5h24v24h-24z" />
+            <path class="st0" d="M399 201v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 150.5h24v24h-24z" />
+            <path class="st0" d="M399 151v23h-23v-23h23m1-1h-25v25h25v-25zM400.5 200.5h24v24h-24z" />
+            <path class="st0" d="M424 201v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 125.5h24v24h-24z" />
+            <path class="st0" d="M399 126v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 100.5h24v24h-24z" />
+            <path class="st0" d="M399 101v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 300.5h24v24h-24z" />
+            <path class="st0" d="M399 301v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 275.5h24v24h-24z" />
+            <path class="st0" d="M399 276v23h-23v-23h23m1-1h-25v25h25v-25zM400.5 275.5h24v24h-24z" />
+            <path class="st0" d="M424 276v23h-23v-23h23m1-1h-25v25h25v-25zM400.5 225.5h24v24h-24z" />
+            <path class="st0" d="M424 226v23h-23v-23h23m1-1h-25v25h25v-25zM400.5 250.5h24v24h-24z" />
+            <path class="st0" d="M424 251v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 75.5h24v24h-24z" />
+            <path class="st0" d="M349 76v23h-23V76h23m1-1h-25v25h25V75zM225.5 50.5h24v24h-24z" />
+            <path class="st0" d="M249 51v23h-23V51h23m1-1h-25v25h25V50zM275.5 50.5h24v24h-24z" />
+            <path class="st0" d="M299 51v23h-23V51h23m1-1h-25v25h25V50zM375.5 75.5h24v24h-24z" />
+            <path class="st0" d="M399 76v23h-23V76h23m1-1h-25v25h25V75zM200.5 50.5h24v24h-24z" />
+            <path class="st0" d="M224 51v23h-23V51h23m1-1h-25v25h25V50zM175.5 50.5h24v24h-24z" />
+            <path class="st0" d="M199 51v23h-23V51h23m1-1h-25v25h25V50zM250.5 50.5h24v24h-24z" />
+            <path class="st0" d="M274 51v23h-23V51h23m1-1h-25v25h25V50zM350.5 75.5h24v24h-24z" />
+            <path class="st0" d="M374 76v23h-23V76h23m1-1h-25v25h25V75zM300.5 50.5h24v24h-24z" />
+            <path class="st0" d="M324 51v23h-23V51h23m1-1h-25v25h25V50zM375.5 325.5h24v24h-24z" />
+            <path class="st0" d="M399 326v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 75.5h24v24h-24z" />
+            <path class="st0" d="M324 76v23h-23V76h23m1-1h-25v25h25V75zM100.5 300.5h24v24h-24z" />
+            <path class="st0" d="M124 301v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 350.5h24v24h-24z" />
+            <path class="st0" d="M124 351v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 375.5h24v24h-24z" />
+            <path class="st0" d="M124 376v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 375.5h24v24h-24z" />
+            <path class="st0" d="M149 376v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 325.5h24v24h-24z" />
+            <path class="st0" d="M124 326v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 375.5h24v24h-24z" />
+            <path class="st0" d="M174 376v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 275.5h24v24h-24z" />
+            <path class="st0" d="M124 276v23h-23v-23h23m1-1h-25v25h25v-25zM75.5 275.5h24v24h-24z" />
+            <path class="st0" d="M99 276v23H76v-23h23m1-1H75v25h25v-25zM75.5 250.5h24v24h-24z" />
+            <path class="st0" d="M99 251v23H76v-23h23m1-1H75v25h25v-25zM175.5 375.5h24v24h-24z" />
+            <path class="st0" d="M199 376v23h-23v-23h23m1-1h-25v25h25v-25zM75.5 225.5h24v24h-24z" />
+            <path class="st0" d="M99 226v23H76v-23h23m1-1H75v25h25v-25zM275.5 375.5h24v24h-24z" />
+            <path class="st0" d="M299 376v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 350.5h24v24h-24z" />
+            <path class="st0" d="M399 351v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 375.5h24v24h-24z" />
+            <path class="st0" d="M349 376v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 375.5h24v24h-24z" />
+            <path class="st0" d="M324 376v23h-23v-23h23m1-1h-25v25h25v-25zM350.5 375.5h24v24h-24z" />
+            <path class="st0" d="M374 376v23h-23v-23h23m1-1h-25v25h25v-25zM375.5 375.5h24v24h-24z" />
+            <path class="st0" d="M399 376v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 400.5h24v24h-24z" />
+            <path class="st0" d="M274 401v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 400.5h24v24h-24z" />
+            <path class="st0" d="M249 401v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 325.5h24v24h-24z" />
+            <path class="st0" d="M149 326v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 400.5h24v24h-24z" />
+            <path class="st0" d="M299 401v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 375.5h24v24h-24z" />
+            <path class="st0" d="M224 376v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 150.5h24v24h-24z" />
+            <path class="st0" d="M249 151v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 275.5h24v24h-24z" />
+            <path class="st0" d="M199 276v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 300.5h24v24h-24z" />
+            <path class="st0" d="M199 301v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 250.5h24v24h-24z" />
+            <path class="st0" d="M199 251v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 300.5h24v24h-24z" />
+            <path class="st0" d="M249 301v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 300.5h24v24h-24z" />
+            <path class="st0" d="M224 301v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 300.5h24v24h-24z" />
+            <path class="st0" d="M274 301v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 75.5h24v24h-24z" />
+            <path class="st0" d="M199 76v23h-23V76h23m1-1h-25v25h25V75zM200.5 175.5h24v24h-24z" />
+            <path class="st0" d="M224 176v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 225.5h24v24h-24z" />
+            <path class="st0" d="M199 226v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 200.5h24v24h-24z" />
+            <path class="st0" d="M199 201v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 175.5h24v24h-24z" />
+            <path class="st0" d="M199 176v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 175.5h24v24h-24z" />
+            <path class="st0" d="M249 176v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 175.5h24v24h-24z" />
+            <path class="st0" d="M324 176v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 150.5h24v24h-24z" />
+            <path class="st0" d="M324 151v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 150.5h24v24h-24z" />
+            <path class="st0" d="M299 151v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 150.5h24v24h-24z" />
+            <path class="st0" d="M274 151v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 200.5h24v24h-24z" />
+            <path class="st0" d="M324 201v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 275.5h24v24h-24z" />
+            <path class="st0" d="M324 276v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 300.5h24v24h-24z" />
+            <path class="st0" d="M324 301v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 300.5h24v24h-24z" />
+            <path class="st0" d="M299 301v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 250.5h24v24h-24z" />
+            <path class="st0" d="M324 251v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 225.5h24v24h-24z" />
+            <path class="st0" d="M324 226v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 175.5h24v24h-24z" />
+            <path class="st0" d="M274 176v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 175.5h24v24h-24z" />
+            <path class="st0" d="M299 176v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 250.5h24v24h-24z" />
+            <path class="st0" d="M274 251v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 250.5h24v24h-24z" />
+            <path class="st0" d="M249 251v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 200.5h24v24h-24z" />
+            <path class="st0" d="M274 201v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 225.5h24v24h-24z" />
+            <path class="st0" d="M274 226v23h-23v-23h23m1-1h-25v25h25v-25zM72.66 74.5l1.84-1.84v1.84h-1.84z" />
+            <path class="st0"
+                d="M74 73.86V74h-.14l.14-.14m1-2.39A234.97 234.97 0 0071.47 75H75v-3.53zM425.5 74.5v-1.84l1.84 1.84h-1.84z" />
+            <path class="st0"
+                d="M426 73.86l.14.14H426v-.14m-1-2.39V75h3.53a195.81 195.81 0 00-3.53-3.53zM425.5 425.5h1.84l-1.84 1.84v-1.84z" />
+            <path class="st0"
+                d="M426.14 426l-.14.14V426h.14m2.39-1H425v3.53c1.19-1.16 2.37-2.34 3.53-3.53zM225.5 200.5h24v24h-24z" />
+            <path class="st0"
+                d="M249 201v23h-23v-23h23m1-1h-25v25h25v-25zM74.5 427.34a159.6 159.6 0 01-1.84-1.84h1.84v1.84z" />
+            <path class="st0"
+                d="M74 426v.14l-.14-.14H74m1-1h-3.53c1.17 1.19 2.34 2.37 3.53 3.53V425zM225.5 225.5h24v24h-24z" />
+            <path class="st0" d="M249 226v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 250.5h24v24h-24z" />
+            <path class="st0" d="M299 251v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 275.5h24v24h-24z" />
+            <path class="st0" d="M299 276v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 200.5h24v24h-24z" />
+            <path class="st0" d="M299 201v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 275.5h24v24h-24z" />
+            <path class="st0" d="M274 276v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 225.5h24v24h-24z" />
+            <path class="st0" d="M299 226v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 275.5h24v24h-24z" />
+            <path class="st0" d="M224 276v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 225.5h24v24h-24z" />
+            <path class="st0" d="M224 226v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 275.5h24v24h-24z" />
+            <path class="st0" d="M249 276v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 250.5h24v24h-24z" />
+            <path class="st0" d="M224 251v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 200.5h24v24h-24z" />
+            <path class="st0" d="M224 201v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 300.5h24v24h-24z" />
+            <path class="st0" d="M149 301v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 125.5h24v24h-24z" />
+            <path class="st0" d="M274 126v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 100.5h24v24h-24z" />
+            <path class="st0" d="M274 101v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 100.5h24v24h-24z" />
+            <path class="st0" d="M249 101v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 125.5h24v24h-24z" />
+            <path class="st0" d="M199 126v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 125.5h24v24h-24z" />
+            <path class="st0" d="M224 126v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 125.5h24v24h-24z" />
+            <path class="st0" d="M249 126v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 150.5h24v24h-24z" />
+            <path class="st0" d="M349 151v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 125.5h24v24h-24z" />
+            <path class="st0" d="M299 126v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 175.5h24v24h-24z" />
+            <path class="st0" d="M349 176v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 125.5h24v24h-24z" />
+            <path class="st0" d="M324 126v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 125.5h24v24h-24z" />
+            <path class="st0" d="M349 126v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 250.5h24v24h-24z" />
+            <path class="st0" d="M124 251v23h-23v-23h23m1-1h-25v25h25v-25zM100.5 225.5h24v24h-24z" />
+            <path class="st0" d="M124 226v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 225.5h24v24h-24z" />
+            <path class="st0" d="M149 226v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 250.5h24v24h-24z" />
+            <path class="st0" d="M149 251v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 275.5h24v24h-24z" />
+            <path class="st0" d="M149 276v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 175.5h24v24h-24z" />
+            <path class="st0" d="M149 176v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 150.5h24v24h-24z" />
+            <path class="st0" d="M149 151v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 150.5h24v24h-24z" />
+            <path class="st0" d="M224 151v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 125.5h24v24h-24z" />
+            <path class="st0" d="M174 126v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 200.5h24v24h-24z" />
+            <path class="st0" d="M149 201v23h-23v-23h23m1-1h-25v25h25v-25zM125.5 125.5h24v24h-24z" />
+            <path class="st0" d="M149 126v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 225.5h24v24h-24z" />
+            <path class="st0" d="M174 226v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 250.5h24v24h-24z" />
+            <path class="st0" d="M174 251v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 325.5h24v24h-24z" />
+            <path class="st0" d="M199 326v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 325.5h24v24h-24z" />
+            <path class="st0" d="M174 326v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 300.5h24v24h-24z" />
+            <path class="st0" d="M174 301v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 275.5h24v24h-24z" />
+            <path class="st0" d="M174 276v23h-23v-23h23m1-1h-25v25h25v-25zM175.5 150.5h24v24h-24z" />
+            <path class="st0" d="M199 151v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 150.5h24v24h-24z" />
+            <path class="st0" d="M174 151v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 175.5h24v24h-24z" />
+            <path class="st0" d="M174 176v23h-23v-23h23m1-1h-25v25h25v-25zM150.5 200.5h24v24h-24z" />
+            <path class="st0" d="M174 201v23h-23v-23h23m1-1h-25v25h25v-25zM225.5 325.5h24v24h-24z" />
+            <path class="st0" d="M249 326v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 325.5h24v24h-24z" />
+            <path class="st0" d="M349 326v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 300.5h24v24h-24z" />
+            <path class="st0" d="M349 301v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 275.5h24v24h-24z" />
+            <path class="st0" d="M349 276v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 225.5h24v24h-24z" />
+            <path class="st0" d="M349 226v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 250.5h24v24h-24z" />
+            <path class="st0" d="M349 251v23h-23v-23h23m1-1h-25v25h25v-25zM325.5 200.5h24v24h-24z" />
+            <path class="st0" d="M349 201v23h-23v-23h23m1-1h-25v25h25v-25zM250.5 325.5h24v24h-24z" />
+            <path class="st0" d="M274 326v23h-23v-23h23m1-1h-25v25h25v-25zM200.5 325.5h24v24h-24z" />
+            <path class="st0" d="M224 326v23h-23v-23h23m1-1h-25v25h25v-25zM300.5 325.5h24v24h-24z" />
+            <path class="st0" d="M324 326v23h-23v-23h23m1-1h-25v25h25v-25zM275.5 325.5h24v24h-24z" />
+            <path class="st0"
+                d="M299 326v23h-23v-23h23m1-1h-25v25h25v-25zM5.41 299.5a247.57 247.57 0 01-3.62-24H24.5v24H5.41z" />
+            <path class="st0"
+                d="M24 276v23H5.82a249.63 249.63 0 01-3.48-23H24m1-1H1.24c.84 8.46 2.1 16.81 3.77 25h20v-25H25z" />
+            <g>
+                <path class="st0" d="M450.5 375.5h15.18a251.1 251.1 0 01-15.18 23.01V375.5z" />
+                <path class="st0"
+                    d="M464.81 376A250.53 250.53 0 01451 396.99V376h13.81m1.74-1H450v25h.02a250.74 250.74 0 0016.53-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450 400.02l.02-.02H450v.02z" />
+                <path class="st0" d="M450.02 400H450v.02l.02-.02z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 375.5h24v24h-24z" />
+                <path class="st0" d="M449 376v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 325.5h24v24h-24z" />
+                <path class="st0" d="M449 326v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 350.5h24v24h-24z" />
+                <path class="st0" d="M449 351v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 224.5v-24h19.09a247.57 247.57 0 013.62 24H475.5z" />
+                <path class="st0"
+                    d="M494.18 201a249.63 249.63 0 013.48 23H476v-23h18.18m.82-1h-20v25h23.76a250.5 250.5 0 00-3.76-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 199.5v-24h12.68a248.53 248.53 0 016.2 24H475.5z" />
+                <path class="st0"
+                    d="M487.82 176a249.55 249.55 0 015.95 23H476v-23h11.82m.73-1H475v25h20a250.21 250.21 0 00-6.45-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 425.5h24v2.82a251.32 251.32 0 01-24 20.69V425.5z" />
+                <path class="st0"
+                    d="M424 426v2.11A250.14 250.14 0 01401 448v-22h23m1-1h-25v25h.02A251.72 251.72 0 00425 428.53V425z" />
+            </g>
+            <g>
+                <path class="st0" d="M71.68 424.5a251.32 251.32 0 01-20.69-24H74.5v24h-2.82z" />
+                <path class="st0"
+                    d="M74 401v23h-2.11A250.14 250.14 0 0152 401h22m1-1H50v.02A251.72 251.72 0 0071.47 425H75v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 249.5v-24h22.81c.77 7.94 1.17 16.01 1.19 24h-24z" />
+                <path class="st0"
+                    d="M497.86 226c.73 7.61 1.11 15.34 1.14 23h-23v-23h21.86m.9-1H475v25h25c0-8.44-.42-16.78-1.24-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 75.5h24v24h-24z" />
+                <path class="st0" d="M174 76v23h-23V76h23m1-1h-25v25h25V75z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 424.5v-24h23.51a251.32 251.32 0 01-20.69 24h-2.82z" />
+                <path class="st0"
+                    d="M448 401a250.14 250.14 0 01-19.89 23H426v-23h22m2-1h-25v25h3.53A251.72 251.72 0 00450 400.02V400z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 175.5h24v24h-24z" />
+                <path class="st0" d="M474 176v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 150.5h24v24h-24z" />
+                <path class="st0" d="M474 151v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 300.5h24v24h-24z" />
+                <path class="st0" d="M474 301v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 100.5h24v24h-24z" />
+                <path class="st0" d="M449 101v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 125.5h24v24h-24z" />
+                <path class="st0" d="M449 126v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 150.5h24v24h-24z" />
+                <path class="st0" d="M449 151v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 275.5h24v24h-24z" />
+                <path class="st0" d="M474 276v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 250.5h24v24h-24z" />
+                <path class="st0" d="M474 251v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 225.5h24v24h-24z" />
+                <path class="st0" d="M474 226v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 200.5h24v24h-24z" />
+                <path class="st0" d="M474 201v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 450.5h24v24h-24z" />
+                <path class="st0" d="M349 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M375.5 450.5h23.01a251.76 251.76 0 01-23.01 15.18V450.5z" />
+                <path class="st0"
+                    d="M396.99 451A250.53 250.53 0 01376 464.81V451h20.99m3.01-1h-25v16.55a249.1 249.1 0 0025-16.54V450z" />
+            </g>
+            <g>
+                <path class="st0" d="M99.98 450l.02.02V450h-.02z" />
+                <path class="st0" d="M100 450h-.02l.02.02V450z" />
+            </g>
+            <g>
+                <path class="st0" d="M100.5 425.5h24v24h-24z" />
+                <path class="st0" d="M124 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M125.5 425.5h24v24h-24z" />
+                <path class="st0" d="M149 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 425.5h24v24h-24z" />
+                <path class="st0" d="M174 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 149.5v-6.4c1.01 2.14 2 4.28 2.93 6.4h-2.93z" />
+                <path class="st0"
+                    d="M476 145.34c.57 1.22 1.12 2.45 1.66 3.66H476v-3.66m-1-4.44v9.1h4.2c-1.34-3.06-2.74-6.1-4.2-9.1z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 149.5v-24h15.76a255.52 255.52 0 018.24 15.52v8.48h-24z" />
+                <path class="st0"
+                    d="M465.97 126a245.91 245.91 0 018.03 15.14V149h-23v-23h14.97m.58-1H450v25h25v-9.1a251.43 251.43 0 00-8.45-15.9z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 450.5h24v24h-24z" />
+                <path class="st0" d="M174 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 174.5v-24h3.37c3.39 7.8 6.42 15.87 9 24H475.5z" />
+                <path class="st0"
+                    d="M478.54 151a248.23 248.23 0 018.64 23H476v-23h2.54m.66-1H475v25h13.55a249.46 249.46 0 00-9.35-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M99.5 449.01a251.32 251.32 0 01-24-20.69v-2.82h24v23.51z" />
+                <path class="st0"
+                    d="M99 426v22a250.14 250.14 0 01-23-19.89V426h23m1-1H75v3.53A251.72 251.72 0 0099.98 450h.02v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M124.5 465.68a251.1 251.1 0 01-23.01-15.18h23.01v15.18z" />
+                <path class="st0"
+                    d="M124 451v13.81A250.53 250.53 0 01103.01 451H124m1-1h-25v.02a250.83 250.83 0 0025 16.54V450z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 124.5v-23.01a251.76 251.76 0 0115.18 23.01H450.5z" />
+                <path class="st0"
+                    d="M451 103.01A250.53 250.53 0 01464.81 124H451v-20.99m-.98-3.01H450v25h16.55a250.74 250.74 0 00-16.53-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 425.5h24v24h-24z" />
+                <path class="st0" d="M349 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M300.5 450.5h24v24h-24z" />
+                <path class="st0" d="M324 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 425.5h24v24h-24z" />
+                <path class="st0" d="M374 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M175.5 450.5h24v24h-24z" />
+                <path class="st0" d="M199 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M375.5 425.5h24v24h-24z" />
+                <path class="st0" d="M399 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M200.5 450.5h24v24h-24z" />
+                <path class="st0" d="M224 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M275.5 450.5h24v24h-24z" />
+                <path class="st0" d="M299 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M225.5 450.5h24v24h-24z" />
+                <path class="st0" d="M249 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M250.5 450.5h24v24h-24z" />
+                <path class="st0" d="M274 451v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400 450.02l.02-.02H400v.02z" />
+                <path class="st0" d="M400.02 450H400v.02l.02-.02z" />
+            </g>
+            <g>
+                <path class="st0" d="M21.13 349.5a250.65 250.65 0 01-9-24H24.5v24h-3.37z" />
+                <path class="st0"
+                    d="M24 326v23h-2.54a248.23 248.23 0 01-8.64-23H24m1-1H11.45a249.46 249.46 0 009.35 25H25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M11.82 324.5a248.53 248.53 0 01-6.2-24H24.5v24H11.82z" />
+                <path class="st0"
+                    d="M24 301v23H12.18a249.55 249.55 0 01-5.95-23H24m1-1H5c1.73 8.5 3.88 16.84 6.45 25H25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M174.5 487.87a248 248 0 01-24-9v-3.37h24v12.37z" />
+                <path class="st0"
+                    d="M174 476v11.19a248.23 248.23 0 01-23-8.64V476h23m1-1h-25v4.2a247.03 247.03 0 0025 9.35V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M33.74 374.5a250.04 250.04 0 01-8.24-15.52v-8.48h24v24H33.74z" />
+                <path class="st0"
+                    d="M49 351v23H34.03A245.91 245.91 0 0126 358.86V351h23m1-1H25v9.09A251.68 251.68 0 0033.45 375H50v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M24.5 356.9c-1.01-2.13-2-4.28-2.93-6.4h2.93v6.4z" />
+                <path class="st0"
+                    d="M24 351v3.66c-.57-1.22-1.12-2.45-1.66-3.66H24m1-1h-4.2a241.7 241.7 0 004.2 9.09V350z" />
+            </g>
+            <g>
+                <path class="st0" d="M1.69 274.5a256.24 256.24 0 01-1.19-24h24v24H1.69z" />
+                <path class="st0"
+                    d="M24 251v23H2.14A252.07 252.07 0 011 251h23m1-1H0c0 8.44.42 16.78 1.24 25H25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M1.79 224.5a250.7 250.7 0 013.62-24H24.5v24H1.79z" />
+                <path class="st0"
+                    d="M24 201v23H2.34c.8-7.71 1.97-15.43 3.48-23H24m1-1H5a250.5 250.5 0 00-3.77 25H25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M5.62 199.5a248.53 248.53 0 016.2-24H24.5v24H5.62z" />
+                <path class="st0"
+                    d="M24 176v23H6.23a249.55 249.55 0 015.95-23H24m1-1H11.45A250.21 250.21 0 005 200h20v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M.5 249.5c.02-7.99.42-16.06 1.19-24H24.5v24H.5z" />
+                <path class="st0"
+                    d="M24 226v23H1c.03-7.66.41-15.39 1.14-23H24m1-1H1.24A251.8 251.8 0 000 250h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M12.13 174.5a248 248 0 019-24h3.37v24H12.13z" />
+                <path class="st0"
+                    d="M24 151v23H12.81c2.49-7.79 5.4-15.52 8.64-23H24m1-1h-4.2a247.03 247.03 0 00-9.35 25H25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 474.5v-24h24v15.76a255.52 255.52 0 01-15.52 8.24h-8.48z" />
+                <path class="st0"
+                    d="M374 451v14.97a245.91 245.91 0 01-15.14 8.03H351v-23h23m1-1h-25v25h9.1a248.71 248.71 0 0015.9-8.45V450z" />
+            </g>
+            <g>
+                <path class="st0" d="M224.5 498.21a250.7 250.7 0 01-24-3.62V475.5h24v22.71z" />
+                <path class="st0"
+                    d="M224 476v21.66c-7.71-.8-15.43-1.97-23-3.48V476h23m1-1h-25v20a250.5 250.5 0 0025 3.77V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M199.5 494.38a248.53 248.53 0 01-24-6.2V475.5h24v18.88z" />
+                <path class="st0"
+                    d="M199 476v17.77a249.55 249.55 0 01-23-5.95V476h23m1-1h-25v13.55c8.16 2.56 16.5 4.72 25 6.45v-20z" />
+            </g>
+            <g>
+                <path class="st0" d="M249.5 499.5c-7.99-.02-16.06-.42-24-1.19V475.5h24v24z" />
+                <path class="st0"
+                    d="M249 476v23c-7.66-.03-15.39-.41-23-1.14V476h23m1-1h-25v23.76a251.8 251.8 0 0025 1.24v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 475.5h6.4c-2.14 1.01-4.28 2-6.4 2.93v-2.93z" />
+                <path class="st0"
+                    d="M354.66 476c-1.22.57-2.45 1.12-3.66 1.66V476h3.66m4.44-1H350v4.2c3.06-1.34 6.1-2.74 9.1-4.2z" />
+            </g>
+            <g>
+                <path class="st0" d="M141.02 474.5a244.8 244.8 0 01-15.52-8.24V450.5h24v24h-8.48z" />
+                <path class="st0"
+                    d="M149 451v23h-7.86a248.84 248.84 0 01-15.14-8.03V451h23m1-1h-25v16.55c5.19 3 10.49 5.82 15.91 8.45H150v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M149.5 478.43c-2.12-.94-4.26-1.92-6.4-2.93h6.4v2.93z" />
+                <path class="st0" d="M149 476v1.66l-3.66-1.66H149m1-1h-9.09c3 1.46 6.03 2.86 9.09 4.2V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.02 100l-.02-.02v.02h.02z" />
+                <path class="st0" d="M450 99.98v.02h.02l-.02-.02z" />
+            </g>
+            <g>
+                <path class="st0" d="M250.5 475.5h24v22.81c-7.94.77-16.01 1.17-24 1.19v-24z" />
+                <path class="st0"
+                    d="M274 476v21.86c-7.61.73-15.34 1.11-23 1.14v-23h23m1-1h-25v25c8.44 0 16.78-.42 25-1.24V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M300.5 475.5h24v12.68a248.53 248.53 0 01-24 6.2V475.5z" />
+                <path class="st0"
+                    d="M324 476v11.82a249.55 249.55 0 01-23 5.95V476h23m1-1h-25v20c8.5-1.73 16.84-3.88 25-6.45V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M275.5 475.5h24v19.09a247.57 247.57 0 01-24 3.62V475.5z" />
+                <path class="st0"
+                    d="M299 476v18.18a249.63 249.63 0 01-23 3.48V476h23m1-1h-25v23.76c8.46-.84 16.81-2.1 25-3.77V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 475.5h24v3.37a250.65 250.65 0 01-24 9V475.5z" />
+                <path class="st0"
+                    d="M349 476v2.54a248.23 248.23 0 01-23 8.64V476h23m1-1h-25v13.55a249.46 249.46 0 0025-9.35V475z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 374.5v-24h24v8.48a244.8 244.8 0 01-8.24 15.52H450.5z" />
+                <path class="st0"
+                    d="M474 351v7.86a248.84 248.84 0 01-8.03 15.14H451v-23h23m1-1h-25v25h16.55c3-5.19 5.82-10.49 8.45-15.91V350z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 350.5h2.93c-.94 2.12-1.92 4.26-2.93 6.4v-6.4z" />
+                <path class="st0" d="M477.66 351l-1.66 3.66V351h1.66m1.54-1H475v9.09a241.7 241.7 0 004.2-9.09z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 349.5v-24h12.37a248 248 0 01-9 24h-3.37z" />
+                <path class="st0"
+                    d="M487.19 326a248.23 248.23 0 01-8.64 23H476v-23h11.19m1.36-1H475v25h4.2a249.46 249.46 0 009.35-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 49.5v-24h8.48a244.8 244.8 0 0115.52 8.24V49.5h-24z" />
+                <path class="st0"
+                    d="M358.86 26c5.12 2.49 10.2 5.19 15.14 8.03V49h-23V26h7.86m.24-1H350v25h25V33.45c-5.19-3-10.49-5.82-15.9-8.45z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 24.5v-2.93c2.12.94 4.26 1.92 6.4 2.93h-6.4z" />
+                <path class="st0" d="M351 22.34l3.66 1.66H351v-1.66m-1-1.54V25h9.1c-3-1.46-6.04-2.86-9.1-4.2z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 299.5v-24h22.71a250.7 250.7 0 01-3.62 24H475.5z" />
+                <path class="st0"
+                    d="M497.66 276c-.8 7.71-1.97 15.43-3.48 23H476v-23h21.66m1.1-1H475v25h20a250.5 250.5 0 003.76-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 274.5v-24h24c-.02 7.99-.42 16.06-1.19 24H475.5z" />
+                <path class="st0"
+                    d="M499 251c-.03 7.66-.41 15.39-1.14 23H476v-23h23m1-1h-25v25h23.76a251.8 251.8 0 001.24-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 99.5v-24h2.82a251.32 251.32 0 0120.69 24H425.5z" />
+                <path class="st0"
+                    d="M428.11 76A250.14 250.14 0 01448 99h-22V76h2.11m.42-1H425v25h25v-.02A251.72 251.72 0 00428.53 75z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 24.5V12.13a248 248 0 0124 9v3.37h-24z" />
+                <path class="st0"
+                    d="M326 12.81c7.79 2.49 15.52 5.4 23 8.64V24h-23V12.81m-1-1.36V25h25v-4.2a249.46 249.46 0 00-25-9.35z" />
+            </g>
+            <g>
+                <path class="st0" d="M475.5 324.5v-24h18.88a248.53 248.53 0 01-6.2 24H475.5z" />
+                <path class="st0"
+                    d="M493.77 301a249.55 249.55 0 01-5.95 23H476v-23h17.77m1.23-1h-20v25h13.55c2.56-8.16 4.72-16.5 6.45-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M21.57 149.5c.94-2.12 1.92-4.26 2.93-6.4v6.4h-2.93z" />
+                <path class="st0"
+                    d="M24 145.34V149h-1.66c.54-1.21 1.09-2.44 1.66-3.66m1-4.44c-1.46 3-2.86 6.03-4.2 9.1H25v-9.1z" />
+            </g>
+            <g>
+                <path class="st0" d="M175.5 24.5V11.82a248.53 248.53 0 0124-6.2V24.5h-24z" />
+                <path class="st0"
+                    d="M199 6.23V24h-23V12.18a249.55 249.55 0 0123-5.95M200 5a247.52 247.52 0 00-25 6.45V25h25V5z" />
+            </g>
+            <g>
+                <path class="st0" d="M143.1 24.5c2.13-1.01 4.28-2 6.4-2.93v2.93h-6.4z" />
+                <path class="st0"
+                    d="M149 22.34V24h-3.66c1.22-.57 2.45-1.12 3.66-1.66m1-1.54a241.7 241.7 0 00-9.09 4.2H150v-4.2z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 24.5v-3.37c7.8-3.39 15.87-6.42 24-9V24.5h-24z" />
+                <path class="st0"
+                    d="M174 12.81V24h-23v-2.54a248.3 248.3 0 0123-8.65m1-1.36a249.46 249.46 0 00-25 9.35V25h25V11.45z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 149.5v-8.48a244.8 244.8 0 018.24-15.52H49.5v24h-24z" />
+                <path class="st0"
+                    d="M49 126v23H26v-7.86c2.49-5.12 5.19-10.2 8.03-15.14H49m1-1H33.45c-3 5.19-5.82 10.49-8.45 15.9v9.1h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M125.5 49.5V33.74a250.04 250.04 0 0115.52-8.24h8.48v24h-24z" />
+                <path class="st0"
+                    d="M149 26v23h-23V34.03A245.91 245.91 0 01141.14 26H149m1-1h-9.09A251.68 251.68 0 00125 33.45V50h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M200.5 24.5V5.41a247.57 247.57 0 0124-3.62V24.5h-24z" />
+                <path class="st0"
+                    d="M224 2.34V24h-23V5.82a249.63 249.63 0 0123-3.48m1-1.1c-8.46.84-16.81 2.1-25 3.77v20h25V1.24z" />
+            </g>
+            <g>
+                <path class="st0" d="M250.5 24.5V.5c7.99.02 16.06.42 24 1.19V24.5h-24z" />
+                <path class="st0" d="M251 1c7.66.03 15.39.41 23 1.14V24h-23V1m-1-1v25h25V1.24A251.8 251.8 0 00250 0z" />
+            </g>
+            <g>
+                <path class="st0" d="M275.5 24.5V1.79a250.7 250.7 0 0124 3.62V24.5h-24z" />
+                <path class="st0"
+                    d="M276 2.34c7.71.8 15.43 1.97 23 3.48V24h-23V2.34m-1-1.1V25h25V5a250.5 250.5 0 00-25-3.76z" />
+            </g>
+            <g>
+                <path class="st0" d="M225.5 24.5V1.69c7.94-.77 16.01-1.17 24-1.19v24h-24z" />
+                <path class="st0"
+                    d="M249 1v23h-23V2.14c7.61-.72 15.34-1.11 23-1.14m1-1c-8.44 0-16.78.42-25 1.24V25h25V0z" />
+            </g>
+            <g>
+                <path class="st0" d="M300.5 24.5V5.62a248.53 248.53 0 0124 6.2V24.5h-24z" />
+                <path class="st0"
+                    d="M301 6.23a249.55 249.55 0 0123 5.95V24h-23V6.23M300 5v20h25V11.45A250.21 250.21 0 00300 5z" />
+            </g>
+            <g>
+                <path class="st0" d="M450.5 325.5h24v24h-24z" />
+                <path class="st0" d="M474 326v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M300.5 400.5h24v24h-24z" />
+                <path class="st0" d="M324 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M275.5 425.5h24v24h-24z" />
+                <path class="st0" d="M299 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M300.5 425.5h24v24h-24z" />
+                <path class="st0" d="M324 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M175.5 400.5h24v24h-24z" />
+                <path class="st0" d="M199 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 400.5h24v24h-24z" />
+                <path class="st0" d="M349 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M175.5 425.5h24v24h-24z" />
+                <path class="st0" d="M199 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M375.5 400.5h24v24h-24z" />
+                <path class="st0" d="M399 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M250.5 425.5h24v24h-24z" />
+                <path class="st0" d="M274 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M200.5 425.5h24v24h-24z" />
+                <path class="st0" d="M224 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M225.5 425.5h24v24h-24z" />
+                <path class="st0" d="M249 426v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 400.5h24v24h-24z" />
+                <path class="st0" d="M374 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 250.5h24v24h-24z" />
+                <path class="st0" d="M449 251v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 400.5h24v24h-24z" />
+                <path class="st0" d="M424 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 275.5h24v24h-24z" />
+                <path class="st0" d="M449 276v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 200.5h24v24h-24z" />
+                <path class="st0" d="M449 201v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 225.5h24v24h-24z" />
+                <path class="st0" d="M449 226v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 300.5h24v24h-24z" />
+                <path class="st0" d="M449 301v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 350.5h24v24h-24z" />
+                <path class="st0" d="M424 351v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 300.5h24v24h-24z" />
+                <path class="st0" d="M424 301v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 375.5h24v24h-24z" />
+                <path class="st0" d="M424 376v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 325.5h24v24h-24z" />
+                <path class="st0" d="M424 326v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 300.5h24v24h-24z" />
+                <path class="st0" d="M99 301v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 150.5h24v24h-24z" />
+                <path class="st0" d="M99 151v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 175.5h24v24h-24z" />
+                <path class="st0" d="M99 176v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 125.5h24v24h-24z" />
+                <path class="st0" d="M99 126v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 200.5h24v24h-24z" />
+                <path class="st0" d="M74 201v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 225.5h24v24h-24z" />
+                <path class="st0" d="M74 226v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 175.5h24v24h-24z" />
+                <path class="st0" d="M74 176v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M125.5 75.5h24v24h-24z" />
+                <path class="st0" d="M149 76v23h-23V76h23m1-1h-25v25h25V75z" />
+            </g>
+            <g>
+                <path class="st0" d="M100.5 75.5h24v24h-24z" />
+                <path class="st0" d="M124 76v23h-23V76h23m1-1h-25v25h25V75z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 100.5h24v24h-24z" />
+                <path class="st0" d="M99 101v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 75.5h24v24h-24z" />
+                <path class="st0" d="M99 76v23H76V76h23m1-1H75v25h25V75z" />
+            </g>
+            <g>
+                <path class="st0" d="M425.5 175.5h24v24h-24z" />
+                <path class="st0" d="M449 176v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 250.5h24v24h-24z" />
+                <path class="st0" d="M74 251v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 400.5h24v24h-24z" />
+                <path class="st0" d="M99 401v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 375.5h24v24h-24z" />
+                <path class="st0" d="M99 376v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M125.5 400.5h24v24h-24z" />
+                <path class="st0" d="M149 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M100.5 400.5h24v24h-24z" />
+                <path class="st0" d="M124 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 350.5h24v24h-24z" />
+                <path class="st0" d="M99 351v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 275.5h24v24h-24z" />
+                <path class="st0" d="M74 276v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 325.5h24v24h-24z" />
+                <path class="st0" d="M99 326v23H76v-23h23m1-1H75v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 300.5h24v24h-24z" />
+                <path class="st0" d="M74 301v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 400.5h24v24h-24z" />
+                <path class="st0" d="M174 401v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 50.5h24v24h-24z" />
+                <path class="st0" d="M174 51v23h-23V51h23m1-1h-25v25h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 125.5h24v24h-24z" />
+                <path class="st0" d="M74 126v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 100.5h24v24h-24z" />
+                <path class="st0" d="M74 101v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M34.32 124.5a251.1 251.1 0 0115.18-23.01v23.01H34.32z" />
+                <path class="st0"
+                    d="M49 103.01V124H35.19c4.23-7.2 8.87-14.24 13.81-20.99m1-3.01h-.02a250.83 250.83 0 00-16.54 25H50v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 150.5h24v24h-24z" />
+                <path class="st0" d="M49 151v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 150.5h24v24h-24z" />
+                <path class="st0" d="M74 151v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M100 49.98l-.02.02h.02v-.02z" />
+                <path class="st0" d="M100 49.98l-.02.02h.02v-.02z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 175.5h24v24h-24z" />
+                <path class="st0" d="M49 176v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M75.5 74.5v-2.82a251.32 251.32 0 0124-20.69V74.5h-24z" />
+                <path class="st0"
+                    d="M99 52v22H76v-2.11A250.14 250.14 0 0199 52m1-2h-.02A251.72 251.72 0 0075 71.47V75h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M50 99.98l-.02.02H50v-.02z" />
+                <path class="st0" d="M50 99.98l-.02.02H50v-.02z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.99 99.5a251.32 251.32 0 0120.69-24h2.82v24H50.99z" />
+                <path class="st0"
+                    d="M74 76v23H52a250.14 250.14 0 0119.89-23H74m1-1h-3.53A251.72 251.72 0 0050 99.98v.02h25V75z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 200.5h24v24h-24z" />
+                <path class="st0" d="M49 201v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 325.5h24v24h-24z" />
+                <path class="st0" d="M74 326v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 350.5h24v24h-24z" />
+                <path class="st0" d="M74 351v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M49.5 398.51a251.76 251.76 0 01-15.18-23.01H49.5v23.01z" />
+                <path class="st0"
+                    d="M49 376v20.99A250.53 250.53 0 0135.19 376H49m1-1H33.45a249.1 249.1 0 0016.54 25H50v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 325.5h24v24h-24z" />
+                <path class="st0" d="M49 326v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M50.5 375.5h24v24h-24z" />
+                <path class="st0" d="M74 376v23H51v-23h23m1-1H50v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 225.5h24v24h-24z" />
+                <path class="st0" d="M49 226v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M101.49 49.5a251.76 251.76 0 0123.01-15.18V49.5h-23.01z" />
+                <path class="st0"
+                    d="M124 35.19V49h-20.99A250.53 250.53 0 01124 35.19m1-1.74a249.1 249.1 0 00-25 16.54V50h25V33.45z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 250.5h24v24h-24z" />
+                <path class="st0" d="M49 251v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 275.5h24v24h-24z" />
+                <path class="st0" d="M49 276v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M25.5 300.5h24v24h-24z" />
+                <path class="st0" d="M49 301v23H26v-23h23m1-1H25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M275.5 25.5h24v24h-24z" />
+                <path class="st0" d="M299 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 74.5V50.99a251.32 251.32 0 0124 20.69v2.82h-24z" />
+                <path class="st0"
+                    d="M401 52a250.14 250.14 0 0123 19.89V74h-23V52m-.98-2H400v25h25v-3.53A251.72 251.72 0 00400.02 50z" />
+            </g>
+            <g>
+                <path class="st0" d="M375.5 49.5V34.32a251.1 251.1 0 0123.01 15.18H375.5z" />
+                <path class="st0"
+                    d="M376 35.19c7.2 4.23 14.24 8.87 20.99 13.81H376V35.19m-1-1.74V50h25v-.02a250.74 250.74 0 00-25-16.53z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.02 50l-.02-.02V50h.02z" />
+                <path class="st0" d="M400 49.98V50h.02l-.02-.02z" />
+            </g>
+            <g>
+                <path class="st0" d="M350.5 50.5h24v24h-24z" />
+                <path class="st0" d="M374 51v23h-23V51h23m1-1h-25v25h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M375.5 50.5h24v24h-24z" />
+                <path class="st0" d="M399 51v23h-23V51h23m1-1h-25v25h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 125.5h24v24h-24z" />
+                <path class="st0" d="M424 126v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 50.5h24v24h-24z" />
+                <path class="st0" d="M349 51v23h-23V51h23m1-1h-25v25h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 75.5h24v24h-24z" />
+                <path class="st0" d="M424 76v23h-23V76h23m1-1h-25v25h25V75z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 150.5h24v24h-24z" />
+                <path class="st0" d="M424 151v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 100.5h24v24h-24z" />
+                <path class="st0" d="M424 101v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M150.5 25.5h24v24h-24z" />
+                <path class="st0" d="M174 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M175.5 25.5h24v24h-24z" />
+                <path class="st0" d="M199 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M100.5 50.5h24v24h-24z" />
+                <path class="st0" d="M124 51v23h-23V51h23m1-1h-25v25h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M49.98 400l.02.02V400h-.02z" />
+                <path class="st0" d="M50 400h-.02l.02.02V400z" />
+            </g>
+            <g>
+                <path class="st0" d="M125.5 50.5h24v24h-24z" />
+                <path class="st0" d="M149 51v23h-23V51h23m1-1h-25v25h25V50z" />
+            </g>
+            <g>
+                <path class="st0" d="M200.5 25.5h24v24h-24z" />
+                <path class="st0" d="M224 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M325.5 25.5h24v24h-24z" />
+                <path class="st0" d="M349 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M225.5 25.5h24v24h-24z" />
+                <path class="st0" d="M249 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M400.5 175.5h24v24h-24z" />
+                <path class="st0" d="M424 176v23h-23v-23h23m1-1h-25v25h25v-25z" />
+            </g>
+            <g>
+                <path class="st0" d="M300.5 25.5h24v24h-24z" />
+                <path class="st0" d="M324 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+            <g>
+                <path class="st0" d="M250.5 25.5h24v24h-24z" />
+                <path class="st0" d="M274 26v23h-23V26h23m1-1h-25v25h25V25z" />
+            </g>
+        </svg>
+    </div>
+    <script>
+
+    </script>
+
+    <div class="vrlogo" onmouseover="hoverTransform()" onmouseout="hoverFix()">
+        <svg class="vrsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+            <g class="headset">
+                <path
+                    d="M286.11 147H13.89A10.9 10.9 0 013 136.11V15.09A10.9 10.9 0 0113.89 4.2h272.22A10.9 10.9 0 01297 15.09v121.02A10.9 10.9 0 01286.11 147z"
+                    stroke="#181818" fill="#181818" />
+                <path fill="none" stroke="#484848" d="M284 4H15" />
+            </g>
+            <g class="vr" style="transform-origin: center center">
+                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="97.75" y1="165.38" x2="256.84" y2="6.29">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#a)" d="M179.33 88.66l1.65 1.66 29.61-22.15h-31.26z" />
+                <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="118.06" y1="185.69" x2="277.15" y2="26.6">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#b)" d="M253.45 53.16l2.36-3.35-2.36-2.36z" />
+                <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="158.31" y1="225.94" x2="317.4" y2="66.84">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#c)" d="M248.69 136h30.26L252 101.55l-8.81 27.59z" />
+                <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="104.66" y1="172.29" x2="263.75" y2="13.19">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#d)" d="M246.96 40.96l-6.7-6.7-15.44 6.88h21.91z" />
+                <linearGradient id="e" gradientUnits="userSpaceOnUse" x1="58.17" y1="125.8" x2="217.26" y2="-33.29">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#e)" d="M76.77 107.1l.1.1-.04-.12z" />
+                <linearGradient id="f" gradientUnits="userSpaceOnUse" x1="43.41" y1="111.04" x2="202.5" y2="-48.06">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#f)" d="M65.95 72.78l-18.62 4.88 29.44 29.44.06-.02z" />
+                <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="55.62" y1="123.25" x2="214.71" y2="-35.84">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#g)" d="M126.32 35.65l-7.38 23.26 24.28-6.36z" />
+                <linearGradient id="h" gradientUnits="userSpaceOnUse" x1="106.85" y1="174.48" x2="265.95" y2="15.39">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#h)" d="M140.57 136h24.98v-34.14l-24.98 18.69z" />
+                <linearGradient id="i" gradientUnits="userSpaceOnUse" x1="86.81" y1="154.43" x2="245.9" y2="-4.66">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#i)" d="M228.46 22.46l-35.51 3.83 10.5 10.49 31.17-8.16z" />
+                <linearGradient id="j" gradientUnits="userSpaceOnUse" x1="83.87" y1="151.5" x2="242.96" y2="-7.6">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#j)" d="M160.47 69.81l5.08 5.08v-7.35z" />
+                <linearGradient id="k" gradientUnits="userSpaceOnUse" x1="-.06" y1="67.57" x2="159.03" y2="-91.52">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#k)" d="M48.26 17H21.05l9.02 26.87 25.82-2.79z" />
+                <linearGradient id="l" gradientUnits="userSpaceOnUse" x1="140.3" y1="207.93" x2="299.39" y2="48.84">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#l)" d="M254.95 92.31h4.03l-3.06-3.05z" />
+                <linearGradient id="m" gradientUnits="userSpaceOnUse" x1="110.22" y1="177.85" x2="269.31" y2="18.76">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#m)" d="M247.14 41.14l-.18-.18-.23.18z" />
+                <linearGradient id="n" gradientUnits="userSpaceOnUse" x1="114.57" y1="182.2" x2="273.67" y2="23.11">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path
+                    d="M247.14 41.14h6.3v6.3l2.37 2.37 18.41-26.04c-.34-.4-.68-.79-1.05-1.16-.24-.24-.5-.46-.75-.68l-25.45 19.04.17.17z"
+                    fill="url(#n)" />
+                <linearGradient id="o" gradientUnits="userSpaceOnUse" x1="79.08" y1="146.71" x2="238.17" y2="-12.38">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#o)" d="M228.46 22.46L223 17h-39.33l9.28 9.29z" />
+                <linearGradient id="p" gradientUnits="userSpaceOnUse" x1="97.42" y1="165.05" x2="256.51" y2="5.96">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path d="M266.61 18.34a18.63 18.63 0 00-7.05-1.34H223l5.46 5.46 38.15-4.12z" fill="url(#p)" />
+                <linearGradient id="q" gradientUnits="userSpaceOnUse" x1="58.31" y1="125.93" x2="217.4" y2="-33.16">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#q)" d="M183.67 17h-51.43l-5.21 16.4 65.92-7.11z" />
+                <linearGradient id="r" gradientUnits="userSpaceOnUse" x1="101.1" y1="168.73" x2="260.19" y2="9.64">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path d="M234.62 28.62l34.54-9.04c-.65-.38-1.33-.73-2.04-1.05l-.51-.19-38.16 4.12 6.17 6.16z"
+                    fill="url(#r)" />
+                <linearGradient id="s" gradientUnits="userSpaceOnUse" x1="121.9" y1="189.53" x2="281" y2="30.44">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path d="M255.81 49.81l9.63 9.63 10.57-33.11a18.5 18.5 0 00-1.8-2.57l-18.4 26.05z" fill="url(#s)" />
+                <linearGradient id="t" gradientUnits="userSpaceOnUse" x1="66.35" y1="133.98" x2="225.44" y2="-25.11">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#t)"
+                    d="M143.22 52.55l22.33-5.85v-5.56h21.25l16.65-4.36-10.5-10.49-65.92 7.11-.71 2.25z" />
+                <linearGradient id="u" gradientUnits="userSpaceOnUse" x1="108.4" y1="176.03" x2="267.49" y2="16.94">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path d="M246.96 40.96l25.45-19.04a21.7 21.7 0 00-1.59-1.28l-30.56 13.62 6.7 6.7z" fill="url(#u)" />
+                <linearGradient id="v" gradientUnits="userSpaceOnUse" x1="76.56" y1="144.19" x2="235.66" y2="-14.9">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path
+                    d="M125.61 117.3l12.61-37.57-30.14 13.43-5.93 18.71H81.53l23.95 23.95c4.79-.51 8.71-2.13 11.72-4.91 3.67-3.41 6.48-7.94 8.41-13.61z"
+                    fill="url(#v)" />
+                <linearGradient id="w" gradientUnits="userSpaceOnUse" x1="137.36" y1="204.99" x2="296.45" y2="45.9">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#w)"
+                    d="M254.95 92.31l.97-3.05-16.4-16.4-19.42 27.48 23.09 28.8 8.81-27.59-7.22-9.24z" />
+                <linearGradient id="x" gradientUnits="userSpaceOnUse" x1="69.4" y1="137.03" x2="228.5" y2="-22.06">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path
+                    d="M78.35 111.86l-1.48-4.66-.1-.1-22.16 9.87.11.32c1.93 5.55 4.76 10.06 8.5 13.51 3.74 3.48 8.78 5.2 15.13 5.2h23.8c1.16 0 2.26-.08 3.33-.19l-23.95-23.95h-3.18z"
+                    fill="url(#x)" />
+                <linearGradient id="y" gradientUnits="userSpaceOnUse" x1="19.35" y1="86.98" x2="178.45" y2="-72.11">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#y)" d="M65.95 72.78l-10.06-31.7-25.82 2.79 8.35 24.89 8.91 8.9z" />
+                <linearGradient id="z" gradientUnits="userSpaceOnUse" x1="24.23" y1="91.86" x2="183.32" y2="-67.24">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#z)" d="M38.42 68.76l3.47 10.32 5.44-1.42z" />
+                <linearGradient id="A" gradientUnits="userSpaceOnUse" x1="42.4" y1="110.02" x2="201.49" y2="-49.07">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#A)" d="M47.33 77.66l-5.44 1.42 12.72 37.9 22.16-9.88z" />
+                <linearGradient id="B" gradientUnits="userSpaceOnUse" x1="129.58" y1="197.2" x2="288.67" y2="38.11">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path d="M278.6 72.6V35.7a18.33 18.33 0 00-2.59-9.37l-10.57 33.11L278.6 72.6z" fill="url(#B)" />
+                <linearGradient id="C" gradientUnits="userSpaceOnUse" x1="73.4" y1="141.03" x2="232.49" y2="-18.06">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#C)" d="M165.55 67.54V46.7l-22.33 5.85 17.25 17.26z" />
+                <linearGradient id="D" gradientUnits="userSpaceOnUse" x1="87.85" y1="155.48" x2="246.94" y2="-3.61">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#D)" d="M160.47 69.81l-19.9 8.87v41.87l24.98-18.69V74.89z" />
+                <linearGradient id="E" gradientUnits="userSpaceOnUse" x1="68.22" y1="135.85" x2="227.31" y2="-23.24">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#E)" d="M143.22 52.55l-24.28 6.36-10.86 34.24 30.14-13.42 2.35-7v5.95l19.9-8.87z" />
+                <linearGradient id="F" gradientUnits="userSpaceOnUse" x1="85.41" y1="153.04" x2="244.5" y2="-6.06">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#F)" d="M203.45 36.78l-16.65 4.36h21.01z" />
+                <linearGradient id="G" gradientUnits="userSpaceOnUse" x1="104.86" y1="172.49" x2="263.95" y2="13.4">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path d="M270.82 20.64c-.53-.38-1.08-.74-1.66-1.07l-34.54 9.04 5.64 5.64 30.56-13.61z" fill="url(#G)" />
+                <linearGradient id="H" gradientUnits="userSpaceOnUse" x1="137.4" y1="205.02" x2="296.49" y2="45.93">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path
+                    d="M255.92 89.26l3.05 3.05h1.1c2.49 0 4.85-.49 7.05-1.45a19.39 19.39 0 005.87-3.91 18.41 18.41 0 004.08-5.95 18.54 18.54 0 001.53-7.56v-.84l-13.16-13.16-9.52 29.82z"
+                    fill="url(#H)" />
+                <linearGradient id="I" gradientUnits="userSpaceOnUse" x1="94.87" y1="162.5" x2="253.97" y2="3.41">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#I)" d="M224.82 41.14l15.44-6.88-5.64-5.64-31.17 8.16 4.36 4.36z" />
+                <linearGradient id="J" gradientUnits="userSpaceOnUse" x1="128.89" y1="196.51" x2="287.98" y2="37.42">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#J)" d="M255.81 49.81l-2.36 3.35v15.01h-10.61l-3.32 4.69 16.4 16.4 9.52-29.82z" />
+                <linearGradient id="K" gradientUnits="userSpaceOnUse" x1="101.01" y1="168.64" x2="260.1" y2="9.54">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#K)" d="M179.33 88.66v2.9l1.65-1.24z" />
+                <linearGradient id="L" gradientUnits="userSpaceOnUse" x1="120.03" y1="187.66" x2="279.12" y2="28.57">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#L)" d="M234.84 68.17l4.68 4.69 3.32-4.69z" />
+                <linearGradient id="M" gradientUnits="userSpaceOnUse" x1="114.12" y1="181.75" x2="273.21" y2="22.66">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#M)" d="M210.59 68.17l-29.61 22.15 2 1.99h30.69l6.43 8.03 19.42-27.48-4.68-4.69z" />
+                <linearGradient id="N" gradientUnits="userSpaceOnUse" x1="102.73" y1="170.36" x2="261.82" y2="11.27">
+                    <stop offset="0" stop-color="#a30aa1" />
+                    <stop offset=".58" stop-color="#750ac5" />
+                    <stop offset="1" stop-color="#1327bd" />
+                </linearGradient>
+                <path fill="url(#N)" d="M179.33 91.56v.75h3.65l-2-1.99z" />
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>
